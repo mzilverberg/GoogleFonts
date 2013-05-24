@@ -12,28 +12,28 @@ First, I must admit that I'm a bit of a neat freak. I dislike having to many con
 **For example:**
 When you want to use the normal and bold versions of the Droid Sans font, the rule below will work in most browsers.
 
-	&lt;link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'&gt;
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
 In IE8 and below, however, we need to make a call to 2 single CSS files in order to be able to use both font weights. Here is where we need to use conditional comments.
 
-	&lt;!--[if lte IE 8]&gt;
-		&lt;link href="http://fonts.googleapis.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" /&gt;
-		&lt;link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" /&gt;
-	&lt;![endif]--&gt;
+	<!--[if lte IE 8]>
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:700" rel="stylesheet" type="text/css" />
+	<![endif]-->
+
+(Further reading: http://stackoverflow.com/questions/3694060/how-to-make-google-fonts-work-in-ie#10885925)
 
 Of course, when using multiple Google Webfonts, those IE8- only rules are only growing in numbers and before you know it, they'll take up half your screen (okay, so I might be exaggerating a bit).
 
 I want to use a method of embedding fonts the Google Webfont library while maintaining a somewhat cleaner code. This is the part where my function comes in handy.
 
-Further reading:
-- http://stackoverflow.com/questions/3694060/how-to-make-google-fonts-work-in-ie#10885925
 
 How to use it?
 -----------------
 
-Insert this line of code where you would normally put &lt;link src="…" /&gt;:
+Insert this line of code where you would normally put &lt;link href="…" /&gt;:
 
-	&lt;?php loadGoogleWebfonts($fonts); ?&gt;
+	<?php loadGoogleWebfonts($fonts); ?>
 
 The function accepts 3 options. See the description for each variable below, or check demo.html for some examples.
 
@@ -54,7 +54,7 @@ Example with multiple fonts:
 
 *Note that you can pass the weights as a string or as an array*
 
-When you only want to use one font, you can use a shorter notation method:
+When you only want to use one font, you can use a shorter notation:
 
 	$fonts = array(
 		'name' => 'Droid Sans',
