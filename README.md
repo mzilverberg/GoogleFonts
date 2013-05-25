@@ -35,7 +35,7 @@ Insert this line of code where you would normally put &lt;link href="…" /&gt;:
 
 	<?php loadGoogleWebfonts($fonts); ?>
 
-The function accepts 3 options. See the description for each variable below, or check demo.html for some examples.
+The function accepts 3 options. See the description for each variable below, or check demo.php for some examples.
 
 **1. An array of one or more fonts**
 
@@ -52,7 +52,7 @@ Example with multiple fonts:
 		)
 	);
 
-*Note that you can pass the weights as a string or as an array*
+*Note that you can pass the weights as a string or as an array*.
 
 When you only want to use one font, you can use a shorter notation:
 
@@ -63,7 +63,7 @@ When you only want to use one font, you can use a shorter notation:
 
 **2. The IE8- conditional comment notation**
 
-This is *true* by default, but won't fire if only one font weight is requested
+This is *true* by default, but won't fire if only one font weight is requested.
 
 **3. Debugging mode**
 
