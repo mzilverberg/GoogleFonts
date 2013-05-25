@@ -67,7 +67,7 @@ This is *true* by default, but won't fire if only one font weight is requested.
 
 **3. Debugging mode**
 
-This is *false* by default. When it is set to *true*, output is rendered with &lt; and &gt; in stead of < and >. In this case the output is plain text.
+This is *false* by default. When it is set to *true*, output is rendered with "& lt ;" and "& gt ;" in stead of < and >. In this case the output is plain text.
 This is a function that I used while writing this function and it was very useful to me during that time. It will remain supported in this script as long as I'm extending its functionality. When I'm done with version 1.0, I will probably remove this feature.
 
 
