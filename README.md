@@ -52,7 +52,7 @@ Example with multiple fonts:
 		)
 	);
 
-*Note that you can pass the weights as a string or as an array*.
+*Note that you can request multiple weights as a string or as an array*.
 
 When you only want to use one font, you can use a shorter notation:
 
@@ -73,6 +73,10 @@ This is a function that I used while writing this function and it was very usefu
 
 Version history
 ---------------
+
+**v.0.8** *latest change: May 25nd, 2013*
+- *weight* is now optional and defaults to 400
+- Combined IE compatible notation URLs within a single conditional comment
 
 **v.0.7.5** *latest change: May 22nd, 2013*
 - Support for loading a single font or multiple fonts from the Google Webfont library

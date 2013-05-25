@@ -8,7 +8,7 @@ require('../loadgooglewebfonts.php');
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <?php
 // example 1 font
-loadGoogleWebfonts(array('name' => 'Droid Sans', 'weight' => '400'));
+loadGoogleWebfonts(array('name' => 'Droid Sans'));
 // example 2 font
 loadGoogleWebfonts(array('name' => 'Cabin', 'weight' => '400italic, 700'));
 // example 3 fonts
@@ -21,22 +21,22 @@ loadGoogleWebfonts(array(array('name' => 'Lobster Two', 'weight' => '400, 700'),
 <body>
 <h1>LoadGoogleWebfonts examples</h1>
 <p>For more information, be sure to check out the <a href="https://github.com/mzilverberg/LoadGoogleWebfonts">LoadGoogleWebfonts GitHub repository</a>.</p>
-
 <ul>
 	<li><a href="#example1">Example 1: Loading a single font</a></li>
    <li><a href="#example2">Example 2: Loading multiple font weights and/or styles</a></li>
    <li><a href="#example3">Example 3: Loading multiple fonts with different weights and/or styles</a></li>
    <li><a href="#example4">Example 4: Disabling the IE8- compatible notation</a></li>
 </ul>
+<p>For example purposes I set the debugging option to <em>true</em> in all examples, so you can view the actual output without having to view the source code.</p>
 
 <div id="example1">
    <h2>Example 1: Loading a single font</h2>
-   <p>Note that I set the debugging option to <em>true</em> in all examples, so you can view the actual output without having to view the source code.</p>
+   <p>If you only want to use the normal weight of a font, you can use the notation below. The function will set the default weight to 400 if no specific font weights are requested.</p>
+   <p>To be honest, <a href="https://github.com/mzilverberg/LoadGoogleWebfonts">loadGoogleWebfonts</a> isn't really necessary when you only want to load a single font and only one weight of that font. But since it works for loading one font, I figured: might as well describe this, too.</p>
    
    <pre><code>&lt;?php
   $font = array(
-    'name' => 'Droid Sans',
-    'weight' => '400'
+    'name' => 'Droid Sans'
   );
   loadGoogleWebfonts($font);
 ?&gt;</code></pre>
@@ -44,9 +44,8 @@ loadGoogleWebfonts(array(array('name' => 'Lobster Two', 'weight' => '400, 700'),
    <div class="output">
       <h3>Output</h3>
       <p>Because I'm only requesting the normal weight of this font, the fallback notation for IE8- isn't part of the output HTML, even though the option is set to <em>true</em> by default.</p>
-      <p>To be honest, <a href="https://github.com/mzilverberg/LoadGoogleWebfonts">loadGoogleWebfonts</a> isn't really necessary when you only want to load a single font and only one weight of that font. But since it works for loading one font, I figured: might as well describe this, too.</p>
       
-      <pre><code><?php loadGoogleWebfonts(array('name' => 'Droid Sans', 'weight' => '400'), true, true); ?></code></pre>
+      <pre><code><?php loadGoogleWebfonts(array('name' => 'Droid Sans'), true, true); ?></code></pre>
       
       <h3>Live example</h3>
       <p class="preview">This text is in Droid Sans (400).</p>
