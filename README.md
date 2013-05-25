@@ -35,7 +35,7 @@ Insert this line of code where you would normally put &lt;link href="…" /&gt;:
 
 	<?php loadGoogleWebfonts($fonts); ?>
 
-The function accepts 3 options. See the description for each variable below, or check demo.php for some examples.
+The function accepts 3 options. See the description for each variable below, or check the demo files for a few examples.
 
 **1. An array of one or more fonts**
 

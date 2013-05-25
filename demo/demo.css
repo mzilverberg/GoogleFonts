@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Simple reset and basic styling */
+body {
+	width: 980px;
+	margin: 20px auto;
+	font: 62.5% Arial, Helvetica, sans-serif;
+}
+
+div, h1, h2, h3, p, pre { display: block; margin: 0; padding: 0; }
+h1, h2, h3 { margin-bottom: 0.5em; }
+
+div[id] { margin-top: 30px; }
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.4em; }
+h3 { font-size: 2.0em; }
+
+pre { font-size: 1.6em; margin-bottom: 1em; }
+p, ul { font-size: 1.4em; line-height: 1.4em; margin-bottom: 1em; }
+
+a { color: #00b6d8; }
+p a {
+	font-family: monospace;
+	font-size: 1.1em;
+	padding: 2px 4px;
+	background: #ebebeb;
+}
+p a:hover { background: #00b6d8; color: #fff; }
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+code {
+	display: block;
+	padding: 10px 20px;
+	border: 1px solid #b6e9ff;
+	background: #e5f8fb;
+}
+		
+/* Examples */
+#example1 .output p.preview { font-family: 'Droid Sans'; }
+
+#example2 .output p.preview { font-family: 'Cabin'; }
+	#example2 .output strong { font-weight: 700; }
+	#example2 .output em { font-weight: 400; font-style: italic; }
+	
+#example3 .output p.preview.lobster { font-family: 'Lobster Two'; font-size: 1.6em; margin-bottom: 0; }
+	#example3 .output p.preview.lobster strong { font-weight: 700; }
+#example3 .output p.preview.roboto { font-family: 'Roboto Slab'; }
+	#example3 .output p.preview.roboto span.ultralight { font-weight: 100; }
+	#example3 .output p.preview.roboto span.book { font-weight: 300; }
