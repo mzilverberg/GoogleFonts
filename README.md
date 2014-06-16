@@ -35,7 +35,7 @@ Insert this line of code where you would normally put &lt;link href="…" /&gt;:
 
 	<?php loadGoogleWebfonts($fonts); ?>
 
-The function accepts 3 options. See the description for each variable below, or check the demo files for a few examples.
+The function accepts 2 options. See the description for each variable below, or check the demo files for a few examples.
 
 **1. An array of one or more fonts**
 
@@ -47,12 +47,11 @@ Example with multiple fonts:
 			'weight' => '400, 700'
 		),
 		array(
-			'name' => 'Cabin',
-			'weight' => array('400', '400italic', '500')
+			'name' => 'Poiret One',
+			'subset' => 'latin',
+			'weight' => '700'
 		)
 	);
-
-*Note that you can request multiple weights as a string or as an array*.
 
 When you only want to use one font, you can use a shorter notation:
 
@@ -63,16 +62,24 @@ When you only want to use one font, you can use a shorter notation:
 
 **2. The IE8- conditional comment notation**
 
-This is *true* by default, but won't fire if only one font weight is requested.
+If variable $_SERVER['HTTP_USER_AGENT'] shows IE8- than function uses special notation automatically.
 
 **3. Debugging mode**
 
 This is *false* by default. When it is set to *true*, output is rendered with "& lt ;" and "& gt ;" in stead of < and >. In this case the output is plain text.
 This is a function that I used while writing this function and it was very useful to me during that time. It will remain supported in this script as long as I'm extending its functionality. When I'm done with version 1.0, I will probably remove this feature.
 
+**4. Performance Optimized Method of Adding Google Web Fonts**
+
+To load several fonts with one query function simply takes URLs and combines with a | character. 
 
 Version history
 ---------------
+**v.0.8.1** *latest change: June 16, 2014*
+- removed default value of *weight*
+- removed parameter for fallback mode. Now IE8- is detected automatically
+- added new param *subset* to load different subsets of one font
+- added optimization to load as much as possible fonts in one query
 
 **v.0.8** *latest change: May 25nd, 2013*
 - *weight* is now optional and defaults to 400
