@@ -5,8 +5,8 @@ LOAD GOOGLE WEBFONTS
  * Description:	A PHP script for loading Google Webfonts' css files in an orderly manner
  * Version:			0.8.1
  * Author:			Maarten Zilverberg (www.mzilverberg.com)
- * Author:			Shemyakina Tatiana (www.life-thai.com)
- * Examples:		https://github.com/mzilverberg/LoadGoogleWebfonts
+ * Contributor:			Shemyakina Tatiana (www.life-thai.com)
+ * Examples:			https://github.com/tashemi/LoadGoogleWebfonts
  
  * Licensed under the GPL license:
  * http://www.gnu.org/licenses/gpl.html
