@@ -53,3 +53,4 @@ code {
 #example3 .output p.preview.roboto { font-family: 'Roboto Slab'; }
 	#example3 .output p.preview.roboto span.ultralight { font-weight: 100; }
 	#example3 .output p.preview.roboto span.book { font-weight: 300; }
+.output p.preview.poiret { font-family: 'Poiret One'; }
