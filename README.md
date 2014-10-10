@@ -85,14 +85,14 @@ Upcoming
 
 Version history
 ---------------
-**v.0.8.2** *latest change: October 9, 2014*
+**v.0.8.2** *latest change: October 10th, 2014*
 - changed name to `loadGoogleFonts`
 - I decided I like double quotes now
 - added some comments
 - minor syntax changes
 
-**v.0.8.1** *latest change: June 16, 2014*
-- removed default value of *weight*, since some fonts don't have a font weight of 400
+**v.0.8.1** *latest change: June 16th, 2014*
+- removed default value of *weight*, since Google will provide the default values
 - removed parameter for fallback mode. Now IE8- is detected automatically
 - added new param *subset* to load different subsets of one font
 - added optimization to load as much as possible fonts in one query

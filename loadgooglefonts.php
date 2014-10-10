@@ -81,6 +81,8 @@ function loadGoogleFonts($fonts, $debug = false) {
 			}
             // if subsets are specified
 			if(isset($font["subset"])) {
+				// remove spaces
+				$font["subset"] = str_replace(" ", "", $font["subset"]);
 				$url = "http://fonts.googleapis.com/css?family=" . $font_family;
 				$url .= "&subset=" . $font["subset"];
                 // give output
@@ -127,6 +129,6 @@ function getFontWeight($font){
 // echo output
 function outputFontUrl($url, $x){
 	// html output
-	echo $x[0] . "link href='" . $url . "' rel='stylesheet' type='text/css' /" . $x[1] . "\n";
+	echo $x[0] . "link href=\"" . $url . "\" rel=\"stylesheet\" type=\"text/css\" /" . $x[1] . "\n";
 }
 ?>
